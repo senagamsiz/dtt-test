@@ -7,6 +7,8 @@ import com.example.realestateapp.data.local.dao.HouseDao
 import com.example.realestateapp.data.local.database.AppDatabase
 import com.example.realestateapp.data.remote.AuthInterceptor
 import com.example.realestateapp.data.remote.api.HouseApi
+import com.example.realestateapp.data.repository.HouseRepository
+import com.example.realestateapp.data.repository.HouseRepositoryImpl
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
@@ -22,6 +24,7 @@ val appModules = module {
     single { provideRetrofit(get()) }
     single { provideDatabase(androidApplication()) }
     single { provideDao(get()) }
+    single { HouseRepositoryImpl(get(), get()) }
 }
 
 
