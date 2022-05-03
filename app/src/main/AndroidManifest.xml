@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RealEstateAppsenagamsizogluassignment">
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".ui.view.SplashScreenActivity"
             android:theme="@style/Theme.SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.view.MainActivity"
             android:exported="true">
 
         </activity>
