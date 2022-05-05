@@ -1,12 +1,26 @@
 package com.example.realestateapp.ui.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import com.example.realestateapp.R
 
+
+
 class SplashScreenActivity : AppCompatActivity() {
+    lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
+
+        supportActionBar?.hide()
+
+        handler = Handler()
+        handler.postDelayed({
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        },  2000)  // delaying for 2 sec till open
     }
 }
