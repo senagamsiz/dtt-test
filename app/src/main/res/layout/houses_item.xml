@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="house"
+            type="com.example.realestateapp.data.model.House" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_houses_item_container"
+        android:layout_marginTop="@dimen/margin_top_houses_item_container"
+        android:layout_marginEnd="@dimen/margin_end_houses_item_container"
+        android:layout_marginBottom="@dimen/margin_bottom_houses_item_container"
+        android:background="@drawable/background_recyclerview_item">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_houses_image_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_card_view_houses_item"
+            android:layout_marginTop="@dimen/margin_top_card_view_houses_item"
+            android:layout_marginBottom="@dimen/margin_bottom_card_view_houses_item"
+            app:cardCornerRadius="@dimen/corner_radius_card_view_houses_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_view_houses"
+                android:layout_width="@dimen/width_image_view_houses_item"
+                android:layout_height="@dimen/height_image_view_houses_item"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/place_holder"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_view_price"
+            style="@style/title_02_text_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_houses_item_price_text_view"
+            android:layout_marginTop="@dimen/margin_top_houses_item_price_text_view"
+            android:layout_marginEnd="@dimen/margin_end_houses_item_price_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_view_houses_image_container"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/placeholder_text_price" />
+
+        <TextView
+            android:id="@+id/text_view_address"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_houses_item_address_text_view"
+            android:layout_marginEnd="@dimen/margin_end_houses_item_address_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_view_houses_image_container"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_price"
+            tools:text="@string/placeholder_text_address" />
+
+        <ImageView
+            android:id="@+id/image_view_bed"
+            android:layout_width="@dimen/width_houses_item_icons_image_view"
+            android:layout_height="@dimen/height_houses_item_icons_image_view"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_bed"
+            app:layout_constraintStart_toStartOf="@+id/text_view_address"
+            app:srcCompat="@drawable/ic_bed" />
+
+        <TextView
+            android:id="@+id/text_view_bed"
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(house.bedrooms)}"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_bath"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_view_bed"
+            app:layout_constraintTop_toTopOf="@+id/image_view_bed"
+            tools:text="@string/placeholder_text_bed_number" />
+
+        <ImageView
+            android:id="@+id/image_view_bath"
+            android:layout_width="@dimen/width_houses_item_icons_image_view"
+            android:layout_height="@dimen/height_houses_item_icons_image_view"
+            android:layout_marginStart="@dimen/margin_start_houses_item_icon_image_view"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_bath"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_view_bed"
+            app:srcCompat="@drawable/ic_bath" />
+
+        <TextView
+            android:id="@+id/text_view_bath"
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(house.bathrooms)}"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_size"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_view_bath"
+            app:layout_constraintTop_toTopOf="@+id/image_view_bath"
+            tools:text="@string/placeholder_text_bath_number" />
+
+        <ImageView
+            android:id="@+id/image_view_size"
+            android:layout_width="@dimen/width_houses_item_icons_image_view"
+            android:layout_height="@dimen/height_houses_item_icons_image_view"
+            android:layout_marginStart="@dimen/margin_start_houses_item_icon_image_view"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_size"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_view_bath"
+            app:srcCompat="@drawable/ic_layers" />
+
+        <TextView
+            android:id="@+id/text_view_size"
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(house.size)}"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_distance"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_view_size"
+            app:layout_constraintTop_toTopOf="@+id/image_view_size"
+            tools:text="@string/placeholder_text_size" />
+
+        <ImageView
+            android:id="@+id/image_view_distance"
+            android:layout_width="@dimen/width_houses_item_icons_image_view"
+            android:layout_height="@dimen/height_houses_item_icons_image_view"
+            android:layout_marginStart="@dimen/margin_start_houses_item_icon_image_view"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_distance"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_view_size"
+            app:srcCompat="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/text_view_distance"
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_end_houses_item_distance_text_view"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_houses_image_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/image_view_distance"
+            app:layout_constraintTop_toTopOf="@+id/image_view_distance"
+            tools:text="@string/placeholder_text_distance" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

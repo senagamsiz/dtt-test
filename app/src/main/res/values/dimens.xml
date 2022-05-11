@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_text_view_overview_screen_header">
+        margin_top_overview_screen_header
+    </dimen>
+    <dimen name="margin_start_text_view_overview_screen_header">margin_start_overview_screen_header
+    </dimen>
+    <dimen name="width_edit_text_details_screen_search">edit_text_details_screen_search</dimen>
+    <dimen name="padding_start_edit_text_details_screen_search">
+        start_edit_text_details_screen_search
+    </dimen>
+    <dimen name="padding_top_edit_text_details_screen_search">top_edit_text_details_screen_search
+    </dimen>
+    <dimen name="padding_end_edit_text_details_screen_search">end_edit_text_details_screen_search
+    </dimen>
+    <dimen name="padding_bottom_edit_text_details_screen_search">
+        bottom_edit_text_details_screen_search
+    </dimen>
+    <dimen name="text_size_edit_text_details_screen_search">size_edit_text_details_screen_search
+    </dimen>
+
+    <dimen name="height_recycler_view_overview_screen">height_recycler_view_overview_screen</dimen>
+    <dimen name="width_recycler_view_overview_screen">width_recycler_view_overview_screen</dimen>
+    <dimen name="margin_bottom_houses_item_container">margin_bottom_houses_item_container</dimen>
+    <dimen name="margin_top_houses_item_container">margin_top_houses_item_container</dimen>
+    <dimen name="margin_end_houses_item_container">margin_end_houses_item_container</dimen>
+    <dimen name="margin_start_houses_item_container">margin_start_houses_item_container</dimen>
+    <dimen name="margin_bottom_card_view_houses_item">margin_bottom_card_view_houses_item</dimen>
+    <dimen name="margin_top_card_view_houses_item">margin_top_card_view_houses_item</dimen>
+    <dimen name="margin_start_card_view_houses_item">margin_start_card_view_houses_item</dimen>
+    <dimen name="corner_radius_card_view_houses_item">corner_radius_card_view_houses_item</dimen>
+    <dimen name="height_image_view_houses_item">height_image_view_houses_item</dimen>
+    <dimen name="width_image_view_houses_item">width_image_view_houses_item</dimen>
+    <dimen name="margin_top_houses_item_price_text_view">margin_top_houses_item_price_text_view
+    </dimen>
+    <dimen name="margin_end_houses_item_price_text_view">margin_end_houses_item_price_text_view
+    </dimen>
+    <dimen name="margin_start_houses_item_price_text_view">
+        margin_start_houses_item_price_text_view
+    </dimen>
+    <dimen name="margin_end_houses_item_address_text_view">
+        margin_end_houses_item_address_text_view
+    </dimen>
+    <dimen name="margin_start_houses_item_address_text_view">
+        margin_start_houses_item_address_text_view
+    </dimen>
+    <dimen name="height_houses_item_icons_image_view">height_houses_item_icons_image_view</dimen>
+    <dimen name="width_houses_item_icons_image_view">width_houses_item_icons_image_view</dimen>
+    <dimen name="margin_start_houses_item_icon_image_view">
+        margin_start_houses_item_icon_image_view
+    </dimen>
+    <dimen name="margin_end_houses_item_distance_text_view">
+        margin_end_houses_item_distance_text_view
+    </dimen>
+</resources>

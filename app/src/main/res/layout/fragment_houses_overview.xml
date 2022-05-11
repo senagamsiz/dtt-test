@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray"
     tools:context=".ui.view.HousesOverviewFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/text_view_overview_head"
+        style="@style/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_text_view_overview_screen_header"
+        android:layout_marginTop="@dimen/margin_top_text_view_overview_screen_header"
+        android:text="@string/overview_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/search_address"
+        android:layout_width="@dimen/width_edit_text_details_screen_search"
+        android:layout_height="48dp"
+        android:fontFamily="@font/gothamssm_book"
+        android:hint="@string/search_text"
+        android:maxLines="1"
+        android:paddingStart="@dimen/padding_start_edit_text_details_screen_search"
+        android:paddingTop="@dimen/padding_top_edit_text_details_screen_search"
+        android:paddingEnd="@dimen/padding_end_edit_text_details_screen_search"
+        android:paddingBottom="@dimen/padding_bottom_edit_text_details_screen_search"
+        android:textSize="@dimen/text_size_edit_text_details_screen_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_overview_head"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_recipes_list"
+        android:layout_width="@dimen/width_recycler_view_overview_screen"
+        android:layout_height="@dimen/height_recycler_view_overview_screen"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_address" />
+</androidx.constraintlayout.widget.ConstraintLayout>
