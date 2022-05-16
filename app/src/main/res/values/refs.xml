@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <drawable name="background_searchview">background_searchview</drawable>
-    <drawable name="ic_search">ic_search</drawable>
-    <drawable name="search_empty">search_empty</drawable>
+
+
     <drawable name="background_recyclerview_item">background_recyclerview_item</drawable>
     <drawable name="place_holder">place_holder</drawable>
 </resources>

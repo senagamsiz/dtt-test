@@ -21,9 +21,14 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/search_address"
+        android:id="@+id/search_view_address"
         android:layout_width="@dimen/width_edit_text_details_screen_search"
         android:layout_height="48dp"
+        android:layout_marginStart="@dimen/margin_start_edit_text_details_screen_search"
+        android:layout_marginTop="@dimen/margin_top_edit_text_details_screen_search"
+        android:layout_marginEnd="@dimen/margin_end_edit_text_details_screen_search"
+        android:background="@drawable/background_searchview"
+        android:drawableEnd="@drawable/ic_search"
         android:fontFamily="@font/gothamssm_book"
         android:hint="@string/search_text"
         android:maxLines="1"
@@ -39,6 +44,37 @@
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="33dp" />
 
+    <ImageView
+        android:id="@+id/image_view_search_state_empty"
+        android:layout_width="@dimen/width_image_view_state_empty"
+        android:layout_height="@dimen/height_image_view_state_empty"
+        android:src="@drawable/search_state_empty"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:src="@drawable/search_state_empty" />
+
+    <TextView
+        android:id="@+id/text_view_search_state_empty"
+        style="@style/empty_state_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_text_view_details_screen_state_empty"
+        android:lines="2"
+        android:text="@string/search_empty_stage"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_search_state_empty"
+        app:layout_constraintVertical_bias="0.046" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_recipes_list"
         android:layout_width="@dimen/width_recycler_view_overview_screen"
@@ -47,5 +83,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/search_address" />
+        app:layout_constraintTop_toBottomOf="@id/search_view_address" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

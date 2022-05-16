@@ -16,6 +16,7 @@
     <color name="strong">#CC000000</color>
     <color name="medium">#66000000</color>
     <color name="light">#33000000</color>
+    <color name="link">#5e91cb</color>
 
 
 </resources>
