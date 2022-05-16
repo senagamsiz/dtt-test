@@ -7,10 +7,16 @@
         <item name="android:textColor">@color/strong</item>
     </style>
 
-    <style name="title_02_text_size">
+    <style name="title_02">
         <item name="android:fontFamily">@font/gothamssm_bold</item>
         <item name="android:textSize">@dimen/title_02_text_size</item>
         <item name="android:textColor">@color/strong</item>
+    </style>
+
+    <style name="empty_state_message">
+        <item name="android:fontFamily">@font/gothamssm_book</item>
+        <item name="android:textSize">@dimen/empty_state_text_size</item>
+        <item name="android:textColor">@color/medium</item>
     </style>
 
     <style name="body">
@@ -25,8 +31,9 @@
         <item name="android:textColor">@color/medium</item>
     </style>
 
-    <dimen name="title_01_text_size">first_title_text_size</dimen>
-    <dimen name="title_02_text_size">second_title_text_size</dimen>
-    <dimen name="body_text_size">body_text_size</dimen>
-    <dimen name="subtitle_text_size">subtitle_text_size</dimen>
+
+    <style name="splash_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_dtt</item>
+        <item name="android:statusBarColor">@color/primaryColor</item>
+    </style>
 </resources>

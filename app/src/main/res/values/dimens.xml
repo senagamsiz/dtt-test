@@ -1,55 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_top_text_view_overview_screen_header">
-        margin_top_overview_screen_header
-    </dimen>
-    <dimen name="margin_start_text_view_overview_screen_header">margin_start_overview_screen_header
-    </dimen>
-    <dimen name="width_edit_text_details_screen_search">edit_text_details_screen_search</dimen>
-    <dimen name="padding_start_edit_text_details_screen_search">
-        start_edit_text_details_screen_search
-    </dimen>
-    <dimen name="padding_top_edit_text_details_screen_search">top_edit_text_details_screen_search
-    </dimen>
-    <dimen name="padding_end_edit_text_details_screen_search">end_edit_text_details_screen_search
-    </dimen>
-    <dimen name="padding_bottom_edit_text_details_screen_search">
-        bottom_edit_text_details_screen_search
-    </dimen>
-    <dimen name="text_size_edit_text_details_screen_search">size_edit_text_details_screen_search
-    </dimen>
+    <dimen name="margin_top_text_view_overview_screen_header">24dp</dimen>
+    <dimen name="margin_start_text_view_overview_screen_header">24dp</dimen>
+    <dimen name="width_edit_text_details_screen_search">0dp</dimen>
+    <dimen name="padding_start_edit_text_details_screen_search">16dp</dimen>
+    <dimen name="padding_top_edit_text_details_screen_search">8dp</dimen>
+    <dimen name="padding_end_edit_text_details_screen_search">16dp</dimen>
+    <dimen name="padding_bottom_edit_text_details_screen_search">8dp</dimen>
+    <dimen name="text_size_edit_text_details_screen_search">13sp</dimen>
+    <dimen name="height_recycler_view_overview_screen">0dp</dimen>
+    <dimen name="width_recycler_view_overview_screen">0dp</dimen>
+    <dimen name="margin_bottom_houses_item_container">8dp</dimen>
+    <dimen name="margin_top_houses_item_container">8dp</dimen>
+    <dimen name="margin_end_houses_item_container">16dp</dimen>
+    <dimen name="margin_start_houses_item_container">16dp</dimen>
+    <dimen name="margin_bottom_card_view_houses_item">24dp</dimen>
+    <dimen name="margin_top_card_view_houses_item">24dp</dimen>
+    <dimen name="margin_start_card_view_houses_item">24dp</dimen>
+    <dimen name="corner_radius_card_view_houses_item">16dp</dimen>
+    <dimen name="height_image_view_houses_item">80dp</dimen>
+    <dimen name="width_image_view_houses_item">80dp</dimen>
+    <dimen name="margin_top_houses_item_price_text_view">24dp</dimen>
+    <dimen name="margin_end_houses_item_price_text_view">16dp</dimen>
+    <dimen name="margin_start_houses_item_price_text_view">16dp</dimen>
+    <dimen name="margin_end_houses_item_address_text_view">16dp</dimen>
+    <dimen name="margin_start_houses_item_address_text_view">16dp</dimen>
+    <dimen name="height_houses_item_icons_image_view">16dp</dimen>
+    <dimen name="width_houses_item_icons_image_view">16dp</dimen>
+    <dimen name="margin_start_houses_item_icon_image_view">24dp</dimen>
+    <dimen name="margin_end_houses_item_distance_text_view">24dp</dimen>
+    <dimen name="margin_top_view_information_screen">24dp</dimen>
+    <dimen name="margin_start_view_information_screen">16dp</dimen>
+    <dimen name="margin_end_description_information_screen">16dp</dimen>
+    <dimen name="header_margin_top">24dp</dimen>
+    <dimen name="header_margin_start">16dp</dimen>
+    <dimen name="information_logo_height">55dp</dimen>
+    <dimen name="information_logo_width">160dp</dimen>
+    <dimen name="item_top_margin">12dp</dimen>
+    <dimen name="margin_top_edit_text_details_screen_search">16dp</dimen>
+    <dimen name="margin_start_edit_text_details_screen_search">16dp</dimen>
+    <dimen name="margin_end_edit_text_details_screen_search">16dp</dimen>
+    <dimen name="margin_top_text_view_details_screen_state_empty">16dp</dimen>
+    <dimen name="height_image_view_state_empty">200dp</dimen>
+    <dimen name="width_image_view_state_empty">240dp</dimen>
+    <dimen name="search_view_background_radius">16dp</dimen>
+    <dimen name="empty_state_text_size">14sp</dimen>
+    <dimen name="title_01_text_size">18sp</dimen>
+    <dimen name="title_02_text_size">16sp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="subtitle_text_size">10sp</dimen>
 
-    <dimen name="height_recycler_view_overview_screen">height_recycler_view_overview_screen</dimen>
-    <dimen name="width_recycler_view_overview_screen">width_recycler_view_overview_screen</dimen>
-    <dimen name="margin_bottom_houses_item_container">margin_bottom_houses_item_container</dimen>
-    <dimen name="margin_top_houses_item_container">margin_top_houses_item_container</dimen>
-    <dimen name="margin_end_houses_item_container">margin_end_houses_item_container</dimen>
-    <dimen name="margin_start_houses_item_container">margin_start_houses_item_container</dimen>
-    <dimen name="margin_bottom_card_view_houses_item">margin_bottom_card_view_houses_item</dimen>
-    <dimen name="margin_top_card_view_houses_item">margin_top_card_view_houses_item</dimen>
-    <dimen name="margin_start_card_view_houses_item">margin_start_card_view_houses_item</dimen>
-    <dimen name="corner_radius_card_view_houses_item">corner_radius_card_view_houses_item</dimen>
-    <dimen name="height_image_view_houses_item">height_image_view_houses_item</dimen>
-    <dimen name="width_image_view_houses_item">width_image_view_houses_item</dimen>
-    <dimen name="margin_top_houses_item_price_text_view">margin_top_houses_item_price_text_view
-    </dimen>
-    <dimen name="margin_end_houses_item_price_text_view">margin_end_houses_item_price_text_view
-    </dimen>
-    <dimen name="margin_start_houses_item_price_text_view">
-        margin_start_houses_item_price_text_view
-    </dimen>
-    <dimen name="margin_end_houses_item_address_text_view">
-        margin_end_houses_item_address_text_view
-    </dimen>
-    <dimen name="margin_start_houses_item_address_text_view">
-        margin_start_houses_item_address_text_view
-    </dimen>
-    <dimen name="height_houses_item_icons_image_view">height_houses_item_icons_image_view</dimen>
-    <dimen name="width_houses_item_icons_image_view">width_houses_item_icons_image_view</dimen>
-    <dimen name="margin_start_houses_item_icon_image_view">
-        margin_start_houses_item_icon_image_view
-    </dimen>
-    <dimen name="margin_end_houses_item_distance_text_view">
-        margin_end_houses_item_distance_text_view
-    </dimen>
 </resources>
