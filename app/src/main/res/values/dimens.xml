@@ -49,5 +49,23 @@
     <dimen name="title_02_text_size">16sp</dimen>
     <dimen name="body_text_size">16sp</dimen>
     <dimen name="subtitle_text_size">10sp</dimen>
+    <dimen name="margin_top_text_view_details_screen_header">24dp</dimen>
+    <dimen name="margin_start_text_view_details_screen_header">24dp</dimen>
+    <dimen name="margin_end_view_details_screen">24dp</dimen>
+    <dimen name="margin_start_view_details_screen">16dp</dimen>
+    <dimen name="margin_top_view_details_screen">24dp</dimen>
+    <dimen name="width_text_view_details_screen">0dp</dimen>
+    <dimen name="margin_end_image_view_icon_details_screen">2dp</dimen>
+    <dimen name="margin_start_image_view_bed">16dp</dimen>
+    <dimen name="width_image_view_icon_details_screen">20dp</dimen>
+    <dimen name="height_image_view_icon_details_screen">20dp</dimen>
+    <dimen name="margin_end_text_view_icon_title_details_screen">8dp</dimen>
+    <dimen name="text_view_margin_end_distance">16dp</dimen>
+    <dimen name="margin_top_text_view_price">32dp</dimen>
+    <dimen name="margin_start_text_view_price">24dp</dimen>
+    <dimen name="details_image_height">200dp</dimen>
+    <dimen name="collapsing_toolbar_title_margin_end">64dp</dimen>
+    <dimen name="collapsing_toolbar_title_margin_start">48dp</dimen>
+    <dimen name="app_bar_layout_height">200dp</dimen>
 
 </resources>
