@@ -6,8 +6,8 @@
     <data>
 
         <variable
-            name="house"
-            type="com.example.realestateapp.data.model.House" />
+            type="com.example.realestateapp.data.model.House"
+            name="house" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,12 +36,13 @@
                 android:layout_width="@dimen/width_image_view_houses_item"
                 android:layout_height="@dimen/height_image_view_houses_item"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/place_holder" />
+                tools:srcCompat="@drawable/place_holder"
+                app:imageUrl="@{house.image}"/>
         </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/text_view_price"
-            style="@style/title_02_text_size"
+            style="@style/title_02"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_houses_item_price_text_view"
@@ -50,7 +51,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/card_view_houses_image_container"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/placeholder_text_price" />
+            tools:text="@string/placeholder_text_price"
+            app:price="@{house.price}" />
 
         <TextView
             android:id="@+id/text_view_address"
@@ -62,7 +64,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/card_view_houses_image_container"
             app:layout_constraintTop_toBottomOf="@+id/text_view_price"
-            tools:text="@string/placeholder_text_address" />
+            tools:text="@string/placeholder_text_address"
+            android:text="@{house.city}" />
 
         <ImageView
             android:id="@+id/image_view_bed"
