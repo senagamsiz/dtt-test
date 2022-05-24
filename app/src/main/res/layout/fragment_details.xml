@@ -35,7 +35,7 @@
                     android:layout_height="@dimen/details_image_height"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
-                    app:imageUrl="@{selectedHouse.image}"
+                    app:imageUrl="@{house.image}"
                     app:layout_collapseMode="parallax" />
 
                 <androidx.appcompat.widget.Toolbar
@@ -74,7 +74,7 @@
                     android:layout_marginTop="@dimen/margin_top_text_view_price"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:price="@{selectedProperty.price}"
+                    app:price="@{house.price}"
                     tools:text="@string/placeholder_text_price" />
 
                 <TextView
@@ -104,7 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_end_text_view_icon_title_details_screen"
-                    android:text="@{Integer.toString(selectedHouse.size)}"
+                    android:text="@{Integer.toString(house.size)}"
                     app:layout_constraintBottom_toBottomOf="@+id/text_view_details_price"
                     app:layout_constraintEnd_toStartOf="@+id/image_view_details_distance"
                     app:layout_constraintHorizontal_bias="1.0"
@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_end_text_view_icon_title_details_screen"
-                    android:text="@{Integer.toString(selectedHouse.bathrooms)}"
+                    android:text="@{Integer.toString(house.bathrooms)}"
                     app:layout_constraintBottom_toBottomOf="@+id/text_view_details_price"
                     app:layout_constraintEnd_toStartOf="@+id/image_view_details_size"
                     app:layout_constraintTop_toTopOf="@+id/text_view_details_price"
@@ -152,7 +152,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_end_text_view_icon_title_details_screen"
-                    android:text="@{Integer.toString(selectedHouse.bedrooms)}"
+                    android:text="@{Integer.toString(house.bedrooms)}"
                     app:layout_constraintBottom_toBottomOf="@+id/text_view_details_price"
                     app:layout_constraintEnd_toStartOf="@+id/image_view_details_bath"
                     app:layout_constraintTop_toTopOf="@+id/text_view_details_price"
@@ -190,7 +190,7 @@
                     android:layout_marginStart="@dimen/margin_start_view_details_screen"
                     android:layout_marginTop="@dimen/margin_top_view_details_screen"
                     android:layout_marginEnd="@dimen/margin_end_view_details_screen"
-                    android:text="@{selectedHouse.description}"
+                    android:text="@{house.description}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/text_view_details_description_title"

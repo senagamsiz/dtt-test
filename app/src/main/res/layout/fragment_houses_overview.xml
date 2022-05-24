@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_gray"
-    tools:context=".ui.view.HousesOverviewFragment">
+    tools:context=".ui.view.overview.HousesOverviewFragment">
 
 
     <TextView
@@ -77,7 +77,7 @@
         app:layout_constraintVertical_bias="0.046" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_recipes_list"
+        android:id="@+id/recycler_view_house_list"
         android:layout_width="@dimen/width_recycler_view_overview_screen"
         android:layout_height="@dimen/height_recycler_view_overview_screen"
         android:visibility="visible"

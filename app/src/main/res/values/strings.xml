@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RealEstateApp-senagamsizoglu-assignment</string>
+    <string name="app_name">DTT REAL ESTATE</string>
     <string name="splash_screen">Splash Screen</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="overview_header">DTT REAL ESTATE</string>
@@ -35,5 +35,7 @@
     <string name="description">Description</string>
     <string name="toolbar_content_description">Toolbar</string>
     <string name="location">Location</string>
+    <string name="info">Info</string>
+    <string name="home">Home</string>
 
 </resources>

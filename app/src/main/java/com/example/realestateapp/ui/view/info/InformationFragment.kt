@@ -1,4 +1,4 @@
-package com.example.realestateapp.ui.view
+package com.example.realestateapp.ui.view.info
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

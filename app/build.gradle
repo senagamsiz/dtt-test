@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -12,7 +13,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -64,12 +65,19 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:${rootProject.ext.kotlinSerializationVersion}"
     implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${rootProject.ext.kotlinSerializationConverterVersion}"
 
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
     //Room
     implementation "androidx.room:room-runtime:${rootProject.ext.roomVersion}"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
     annotationProcessor "androidx.room:room-compiler:${rootProject.ext.roomVersion}"
     implementation "androidx.room:room-ktx:${rootProject.ext.roomVersion}"
+
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 
     //Testing libraries
     testImplementation "junit:junit:${rootProject.ext.junitVersion}"

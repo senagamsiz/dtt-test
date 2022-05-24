@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/housesOverviewFragment3">
+    <fragment
+        android:id="@+id/housesOverviewFragment3"
+        android:name="com.example.realestateapp.ui.view.overview.HousesOverviewFragment"
+        android:label="fragment_houses_overview"
+        tools:layout="@layout/fragment_houses_overview" />
+    <fragment
+        android:id="@+id/detailsFragment3"
+        android:name="com.example.realestateapp.ui.view.details.DetailsFragment"
+        android:label="DetailsFragment" />
+</navigation>

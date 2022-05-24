@@ -8,6 +8,10 @@
         <variable
             type="com.example.realestateapp.data.model.House"
             name="house" />
+
+        <variable
+            type="com.example.realestateapp.ui.view.overview.adapter.HouseClickListener"
+            name="clickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,6 +21,7 @@
         android:layout_marginTop="@dimen/margin_top_houses_item_container"
         android:layout_marginEnd="@dimen/margin_end_houses_item_container"
         android:layout_marginBottom="@dimen/margin_bottom_houses_item_container"
+        android:onClick="@{()->clickListener.onClick(house)}"
         android:background="@drawable/background_recyclerview_item">
 
         <androidx.cardview.widget.CardView
@@ -37,7 +42,7 @@
                 android:layout_height="@dimen/height_image_view_houses_item"
                 android:scaleType="centerCrop"
                 tools:srcCompat="@drawable/place_holder"
-                app:imageUrl="@{house.image}"/>
+                app:imageUrl="@{house.image}" />
         </androidx.cardview.widget.CardView>
 
         <TextView
